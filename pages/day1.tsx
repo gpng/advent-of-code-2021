@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { stringLinesToNumber } from "../utils";
+import React, { useEffect, useState } from "react";
+import Display from "../components/Display";
 import input from "../data/day1";
+import { stringLinesToNumber } from "../utils";
 
 const Day1 = () => {
   const [answer1, setAnswer1] = useState("");
@@ -38,12 +39,7 @@ const Day1 = () => {
     main();
   }, []);
 
-  return (
-    <div>
-      <div>Answer1: {answer1}</div>
-      <div>Answer2: {answer2}</div>
-    </div>
-  );
+  return <Display answer1={answer1} answer2={answer2} />;
 };
 
 export default Day1;
