@@ -9,8 +9,16 @@ const Display: FC<Props> = ({ answer1 = "", answer2 = "" }) => {
   return (
     <div className="root">
       <div className="content">
-        <div>Answer1: {answer1 === "" ? "Calculating..." : answer1}</div>
-        <div>Answer2: {answer2 === "" ? "Calculating..." : answer2}</div>
+        <div>
+          Answer1:
+          <br />
+          {answer1 === "" ? "Calculating..." : answer1}
+        </div>
+        <div>
+          Answer2:
+          <br />
+          {answer2 === "" ? "Calculating..." : answer2}
+        </div>
       </div>
       <style jsx>{`
         .root {
